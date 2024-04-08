@@ -1,0 +1,27 @@
+:root{
+    --Fraunces : 'Fraunces', serif;
+    --Lato: 'Lato', sans-serif;
+    --Oswald : 'Oswald', sans-serif;
+    --color1: #c4a47c;
+    --color2: #fff;
+    --color3: #000000;
+    --color4: #604829;
+    --color5: #666;
+    --color6: #ACACAC;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--color2);
+}
+
+.top{
+    position: fixed;
+    background-color: var(--color1);
+}
+header nav ul > li{
+    background-color: var(--color4);
+}
