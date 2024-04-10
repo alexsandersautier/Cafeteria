@@ -126,7 +126,7 @@ li > a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
     padding: 20px;
     background-image: url('../imgs/parallax-imagem4.png');
     background-size: cover;
@@ -139,10 +139,43 @@ li > a{
     width: 80%;
 }
 .contacts .box{
-    padding: 10px 10px;
+    padding: 10px 40px;
     text-align: center;
     text-shadow: 3px 3px black;
+    
 }
+.box > p{
+    margin: 5px;
+
+} 
+
+.schedules{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imgs/cafeteria.jpg);
+    background-size: cover;
+    padding: 5vh;
+}
+.schedules ul > li{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 1vw auto;
+} 
+
+.schedules > h2 {
+    margin: 15vh auto;
+}
+
+.line{
+    width: 30vw;
+    margin: 0 20px;
+    border-bottom: 1px solid var(--color6);
+}
+
+
 .font-fraunces{
     font-family: var(--Fraunces);
 }
