@@ -20,7 +20,7 @@
 
 .top{
     position: fixed;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     padding: 0 7%;
@@ -61,10 +61,6 @@ li > a{
     font-family: var(--Fraunces);
     font-weight: normal;
     font-size: 80px;
-}
-
-.information{
-
 }
 
 .firts{
@@ -157,24 +153,51 @@ li > a{
     background-image: url(../imgs/cafeteria.jpg);
     background-size: cover;
     padding: 5vh;
+    
 }
 .schedules ul > li{
     display: flex;
     justify-content: space-between;
     gap: 10px;
     margin: 1vw auto;
+    text-align: end;
 } 
+
+.text-left{
+    text-align: start !important;
+}
 
 .schedules > h2 {
     margin: 15vh auto;
 }
+span{
+    width: 100px;
+}
 
 .line{
-    width: 30vw;
+    width: 300px;
     margin: 0 20px;
     border-bottom: 1px solid var(--color6);
 }
 
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color3);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: var(--color2);
+    gap: 10px;
+    position: relative;
+}
+
+.return{
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+}
 
 .font-fraunces{
     font-family: var(--Fraunces);
@@ -208,4 +231,33 @@ li > a{
 }
 .back-black{
     background-color: var(--color3) !important;
+}
+@media (max-width: 600px) {
+    .return{
+
+    }
+    .firts{
+        height: 80%;
+    }
+    .banner h1{
+        font-size: 40px;
+    }
+    .schedules > h2 {
+        margin: 7.5vh auto;
+    }
+    .line{
+        width: 100px;
+        margin: 0 20px;
+        border-bottom: 1px solid var(--color6);
+    }
+    .return{
+        bottom: 90px;
+        right: 2vw;
+    }
+    .return > img{
+        width: 80%;
+    }
+    footer > p{
+        width: 70%;
+    }
 }
